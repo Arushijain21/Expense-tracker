@@ -1,0 +1,40 @@
+
+<%- include("partials/header")%>
+
+<link rel="stylesheet" href="/stylesheets/expensesform.css">
+
+<div class="expenseformpg">
+
+    <form action="/expensesform" method="post">
+<h1>ADD EXPENSES</h1>
+
+<h4>Expense Name:</h4>
+<input type="text" name="Expensename">
+<h4>Amount:</h4>
+<input type="number" name="amount">
+<h4>Category:</h4>
+<select name="category">
+    <option value=""> Choose Category</option>
+    <option value="Food">Food</option>
+    <option value="Grocery">Grocery</option>
+    <option value="Shopping">Shopping</option>
+    <option value="Travel">Travel</option>
+    <option value="Medical">Medical</option>
+    <option value="Education">Education</option>
+    <option value="Household">Household</option>
+    <option value="Rent & Taxes">Rent & Taxes</option>
+    <option value="Other">Other</option>
+
+</select>
+<h4>Payment Mode:</h4>
+<select name="paymentmode">
+    <option value="">Choose Paymentmode</option>
+    <option value="cash">Cash</option>
+    <option value="online">Online</option>
+    <option value="cheque">Cheque</option>
+</select>
+<button>SUBMIT</button>
+    </form>
+</div>
+
+<%- include("partials/footer")%>

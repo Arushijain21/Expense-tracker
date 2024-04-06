@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.infobox{
+    height: 87vh;
+    width: 35vw;
+    background-color: lightblue;
+padding: 2vmax 3vmax;
+border-radius: 1vmax;
+
+}
+img{
+    height: 31vh;
+    width: 15vw;
+    border-radius: 50vmax;
+    object-fit:cover ;
+    object-position: top;
+
+
+}
+.nametag, .emailtag, .gendertag, .numbertag, .addresstag, .locationtag{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3vmax;
+}
+
+
+ 
+.btnbox{
+   height: 20vh;
+   width: 15vw;
+   border-radius: 1vmax;
+   background-color: white;
+   position: absolute;
+top:-55%;
+z-index: 99;
+/* transition: all ease 1s; */
+margin-left: 16vmax;
+text-align: center;
+padding-top: 1vmax;
+}
+
+.logoutbtn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6vmax;
+    text-decoration: none;
+padding: 0.5vmax 1vmax;
+background-color: black;
+color: white;
+border: none;
+border-radius: 0.5vmax;
+}
+
+.settingbtn{
+    font-size: 2vmax;
+    position: absolute;
+    top: 15%;
+    right: 36%;
+}
+.closebtn{
+    position: absolute;
+    right: 2%;
+    font-size: 1.4vmax;
+}
+
+.changebtn, .updatebtn, .deletebtn{
+    font-weight: bold;
+    font-size: 1.2vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.5vmax;
+    border-radius: none;
+    text-decoration: none;
+    margin-top: 0.5vmax;
+
+}
+.names{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(max-width: 600px){
+    .infobox{
+        height: 50vh;
+        width: 90vw;
+    }
+
+    img{
+        height: 13vh;
+        /* border: 2px solid black; */
+        width: 27vw;
+    
+    }
+    .nametag, .emailtag, .gendertag, .numbertag, .addresstag, .locationtag{
+        font-size: 1.8vmax;
+    }
+    .settingbtn{
+        font-size: 3vmax;
+        position: absolute;
+        top: 25%;
+        right: 16%;
+    }
+
+    .btnbox{
+        height: 15vh;
+        width: 35vw;
+        border-radius: 1vmax;
+        background-color: white;
+        position: absolute;
+     z-index: 99;
+     margin-left: 20vmax;
+     text-align: center;
+     padding-top: 1vmax;
+     margin-top: 10vmax;
+     }
+     .closebtn{
+        font-size: 3vmax;
+    }
+}

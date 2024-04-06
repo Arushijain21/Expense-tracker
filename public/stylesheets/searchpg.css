@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.pg1{
+    height: 88vh;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vmax 1vmax;
+
+}
+
+.cardbox{
+    height:85vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    padding: 0 3vmax;
+    overflow-y: auto;
+}
+.cardbox::-webkit-scrollbar{
+display: none;
+}
+.card1{
+    height: 42vh;
+    width: 23vw;
+    background-color: white;
+    border-radius: 1vmax;
+    padding: 1vmax 1vmax;
+    margin: 1vmax 1vmax;
+    display: inline-block;
+}
+
+.card1 >h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1vmax;
+}
+
+h3 >span{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.editbtn, .deletebtn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    font-weight: bold;
+   margin: 2vmax;
+}
+
+.create{
+    font-size: 1.4vmax;
+    color: red;
+}
+.card1 >h5{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.8vmax 0;
+    font-size: 1vmax;
+}
+@media(max-width: 600px){
+    .pg1{
+        flex-direction: column;
+    }
+    .card1{
+        display: block;
+        margin:  2vmax auto;
+        height: 25vh;
+        width: 72vw;
+    }
+
+    .editbtn, .deletebtn{
+        font-size: 2.4vmax;
+   margin:  2vmax 3vmax;
+
+    }
+
+    .create{
+        font-size: 2.3vmax;
+    }
+    .card1 >h5{
+        font-size: 1.6vmax;
+    }
+}

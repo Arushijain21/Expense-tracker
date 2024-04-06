@@ -1,0 +1,34 @@
+<%- include("partials/header")%>
+<link rel="stylesheet" href="/stylesheets/profile.css">
+
+<div class="infobox">
+    <div class="btnbox">
+        <div class="closebtn"><i class="ri-close-line"></i></div>
+        <a href="/changepassword" class="changebtn">Change Password</a> <br> <br>
+        <a href="/updateuser/<%= user._id%>" class="updatebtn">Update Account</a> <br> <br>
+        <a href="/deleteuser/<%= user._id%>" class="deletebtn">Delete Account</a> <br>
+       </div>
+        
+    <div class="settingbtn"><i class="ri-settings-2-line"></i></div>
+
+
+    <img src="/uploads/<%= user.userimage%>" alt=""> <br> <br>
+   <span class="nametag">Name:</span>  <span class="names"><%= user.username%></span> <br> <br>
+   <span class="emailtag">Email:</span>  <span class="names"><%= user.email%></span> <br> <br>
+   <span class="gendertag">Gender:</span>  <span class="names"><%= user.gender%></span>  <br> <br>
+   <span class="numbertag">Contact:</span>  <span class="names"><%= user.number%></span> <br> <br>
+   <span class="addresstag">Address:</span>  <span class="names"><%= user.address%></span> <br> <br>
+   <span class="locationtag">Location:</span>  <span class="names"><%= user.location%></span> <br> <br>
+   <a  class="logoutbtn" href="/login">Logout</a> <br> <br>
+
+   
+    
+</div>
+<script src="/javascripts/profile.js"></script>
+
+<!-- <%- include("partials/footer")%> -->
+
+
+
+    
+    

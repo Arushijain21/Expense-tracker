@@ -1,0 +1,119 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.registerpg, .updateuserpg{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(10, 10, 93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.updateuserpg> form{
+    height: 59vh;
+}
+
+form{
+    height: 78vh;
+    width: 60vw;
+    background-color: white;
+    border-radius: 1vmax;
+   padding: 1vmax 4vmax;
+
+}
+
+form >h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:2vmax;
+    margin-top: 1vmax;
+    text-align: center;
+    }
+input{
+    height: 7vh;
+    width: 23vw;
+    border: 1px solid grey;
+    border-radius: 0.5vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    margin: 1vmax;
+    padding: 0 2vmax;
+}
+
+form >button{
+    background-color:yellowgreen;
+    padding: 0.6vmax 1.6vmax;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 0.5vmax;
+    margin-top: 1vmax;
+    margin-left: 21vmax;
+    border: none;
+    font-size: 1.4vmax;
+}
+form h2{
+    margin-top: 1vmax;
+    font-size: 1.4vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+form a{
+    color: darkblue;
+    text-decoration: none;
+    /* margin-top: 2vmax; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 21vmax;
+
+}
+
+
+
+@media(max-width: 600px){
+    form{
+        height: 80vh;
+        width: 80vw;
+    }
+
+    form >h1{
+        font-size: 3vmax;
+        }
+
+        input{
+            height: 5vh;
+            width: 50vw;
+            font-size: 1.9vmax;
+            margin-left: 3vmax;
+        }
+
+
+        form >button{
+            padding: 1vmax 2vmax;
+            font-size: 2vmax;
+            margin-top: 1vmax;
+            margin-left: 9vmax;
+        }
+        
+        form a{
+            margin-left: 9vmax;
+        }
+        .updateuserpg{
+            height: 100vh;
+        }
+
+        .updateuserpg >form{
+            height: 60vh;
+        }
+}

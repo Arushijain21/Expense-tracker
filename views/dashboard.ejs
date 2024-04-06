@@ -1,0 +1,78 @@
+<%- include("partials/header")%>
+<%- include("partials/nav1")%>
+
+<link rel="stylesheet" href="/stylesheets/dashboard.css">
+<div class="dashboardpg">
+
+<h1>Your Expenses</h1>
+<div class="btnbox">
+
+   <a href="/expensesform">ADD EXPENSES</a>
+  
+   <div class="totalamt">
+    <h3>Total Amount Spend:</h3>
+    <div class="amtbox"> <%= data.reduce((ac, cv)=> ac+cv.amount, 0)%></div>
+   </div>
+
+</div>
+
+<hr>
+
+
+<div class="expensebox">
+<%if(data.length === 0){%>
+
+    <h1>No expenses yet:</h1>
+<%} else{%>
+
+    <% data.forEach(function(user){ %>
+
+        <div class="card1">
+    
+            <h3><span>Name:</span> &nbsp;  &nbsp;<%= user.Expensename%></h3>
+            <h3> <span>Amount:</span>  &nbsp;  &nbsp;<%= user.amount%></h3> 
+          <h3><span> Category: </span>  &nbsp;  &nbsp;<%= user.category%></h3>
+          <h3><span>Paymentmode:</span> &nbsp;  &nbsp; <%= user.paymentmode%></h3>
+          <h5><span class="create">Created At:</span>  &nbsp;  &nbsp; <%= user.createdAt%></h5>
+          <a href="/editdata/<%= user._id%>" class="editbtn">Edit</a>
+             <a href="/delete/<%= user._id%>" class="deletebtn">Delete</a>
+         </div>
+    
+    
+    <%})%>
+
+
+
+
+<%}%>
+    
+
+
+
+
+
+
+        
+
+
+   
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/javascripts/dashboard.js"></script>
+
+<%- include("partials/footer")%>
